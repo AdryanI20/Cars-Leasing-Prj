@@ -9,6 +9,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="resources\bmw_3series.jpg" />
+    <None Remove="resources\ford_mustang.jpg" />
+    <None Remove="resources\honda_accord.jpg" />
+    <None Remove="resources\tesla_model3.jpg" />
+    <None Remove="resources\toyota_camry.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="resources\bmw_3series.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\ford_mustang.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\honda_accord.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\tesla_model3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\toyota_camry.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.10">
