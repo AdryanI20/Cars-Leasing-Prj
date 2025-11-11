@@ -30,8 +30,8 @@
         <TextBlock Grid.Row="4" Grid.Column="0" Text="End Date:" Margin="10" VerticalAlignment="Center"/>
         <DatePicker Grid.Row="4" Grid.Column="1" x:Name="EndDatePicker" Margin="10" VerticalAlignment="Center" MinWidth="120"/>
         <StackPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-            <Button Content="Cancel" Width="100" Margin="0,0,10,0" Click="CancelButton_Click"/>
-            <Button Content="Confirm Lease" Width="100" Click="ConfirmLeaseButton_Click"/>
+            <Button Content="Cancel" Width="100" Margin="0,0,10,0" />
+            <Button Content="Confirm Lease" Width="100" />
         </StackPanel>
     </Grid>
 </Window>

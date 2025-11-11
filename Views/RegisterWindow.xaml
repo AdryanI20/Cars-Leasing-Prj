@@ -27,7 +27,7 @@
         <PasswordBox Grid.Row="2" Grid.Column="1" x:Name="PasswordBox" Margin="10" VerticalAlignment="Center"/>
         <TextBlock Grid.Row="3" Grid.Column="0" Text="Email:" Margin="10" VerticalAlignment="Center"/>
         <TextBox Grid.Row="3" Grid.Column="1" x:Name="EmailTextBox" Margin="10" VerticalAlignment="Center"/>
-        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Content="Register" Margin="10" VerticalAlignment="Center" Click="RegisterButton_Click"/>
-        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Content="Back to Login" Margin="10" VerticalAlignment="Center" Click="BackToLoginButton_Click"/>
+        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Content="Register" Margin="10" VerticalAlignment="Center"/>
+        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Content="Back to Login" Margin="10" VerticalAlignment="Center"/>
     </Grid>
 </Window>

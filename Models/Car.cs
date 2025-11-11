@@ -8,6 +8,6 @@ namespace ProiectPractica.Models
         public string Model { get; set; }
         public decimal Price { get; set; }
         public int Year { get; set; }
-        public BitmapImage ImageUri { get; set; }
+        public string ImageUri { get; set; }
     }
 }
