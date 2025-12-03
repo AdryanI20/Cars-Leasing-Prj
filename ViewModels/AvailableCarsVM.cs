@@ -4,6 +4,7 @@ using System.Windows.Input;
 using ProiectPractica.Helpers;
 using ProiectPractica.Models;
 using ProiectPractica.Services;
+using ProiectPractica.Views;
 
 namespace ProiectPractica.ViewModels
 {
@@ -44,7 +45,8 @@ namespace ProiectPractica.ViewModels
 
         private void LeaseCar(int carId)
         {
-            MessageBox.Show($"Leasing car with ID: {carId}");
+            LeaseCarWindow leaseCarWindow = new LeaseCarWindow(carId);
+            leaseCarWindow.ShowDialog();
         }
     }
 }

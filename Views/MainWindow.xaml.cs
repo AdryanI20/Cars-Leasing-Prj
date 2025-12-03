@@ -7,18 +7,17 @@ namespace ProiectPractica.Views
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new AvailableCarsWindow());
         }
 
         private void AvailableCarsButton_Click(object sender, RoutedEventArgs e)
         {
-            AvailableCarsWindow availableCarsWindow = new AvailableCarsWindow();
-            MainFrame.Navigate(availableCarsWindow);
+            MainFrame.Navigate(new AvailableCarsWindow());
         }
 
         private void CurrentContractsButton_Click(object sender, RoutedEventArgs e)
         {
-            CurrentContractsWindow currentContractsWindow = new CurrentContractsWindow();
-            MainFrame.Navigate(currentContractsWindow);
+            MainFrame.Navigate(new CurrentContractsWindow());
         }
 
         private void LogoutButton_Click(object sender, RoutedEventArgs e)

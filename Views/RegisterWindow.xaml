@@ -4,11 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProiectPractica.Views"
+        xmlns:viewModels="clr-namespace:ProiectPractica.ViewModels"
         mc:Ignorable="d"
         Title="Register" Height="350" Width="400">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -22,12 +22,14 @@
 
         <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Register" FontSize="20" Margin="0,20,0,10" HorizontalAlignment="Center"/>
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Username:" Margin="10" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="1" Grid.Column="1" x:Name="UsernameTextBox" Margin="10" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Username}" Margin="10" VerticalAlignment="Center"/>
         <TextBlock Grid.Row="2" Grid.Column="0" Text="Password:" Margin="10" VerticalAlignment="Center"/>
-        <PasswordBox Grid.Row="2" Grid.Column="1" x:Name="PasswordBox" Margin="10" VerticalAlignment="Center"/>
+        <PasswordBox Grid.Row="2" Grid.Column="1" PasswordChanged="PasswordBox_PasswordChanged" Margin="10" VerticalAlignment="Center"/>
         <TextBlock Grid.Row="3" Grid.Column="0" Text="Email:" Margin="10" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="3" Grid.Column="1" x:Name="EmailTextBox" Margin="10" VerticalAlignment="Center"/>
-        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Content="Register" Margin="10" VerticalAlignment="Center"/>
-        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Content="Back to Login" Margin="10" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Email}" Margin="10" VerticalAlignment="Center"/>
+        <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button Content="Register" Width="100" Margin="0,0,10,0" Command="{Binding RegisterCommand}"/>
+            <Button Content="Back to Login" Width="100" Command="{Binding BackToLoginCommand}"/>
+        </StackPanel>
     </Grid>
 </Window>

@@ -8,9 +8,6 @@ namespace ProiectPractica
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-
-            LoginWindow loginWindow = new LoginWindow();
-            loginWindow.Show();
         }
     }
 }

@@ -18,7 +18,7 @@
         <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,10">
             <Button Content="Available Cars" Margin="10" Width="150" Click="AvailableCarsButton_Click"/>
             <Button Content="Current Contracts" Margin="10" Width="150" Click="CurrentContractsButton_Click"/>
-            <Button Content="Logout" Margin="10" Width="150" Click="LogoutButton_Click"/>
+            <Button Content="Log in" Margin="10" Width="150" Click="LogoutButton_Click"/>
         </StackPanel>
         <Frame Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
     </Grid>

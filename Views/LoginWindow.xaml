@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProiectPractica.Views"
+        xmlns:viewModels="clr-namespace:ProiectPractica.ViewModels"
         mc:Ignorable="d"
         Title="Login" Height="300" Width="400">
     <Grid>
@@ -21,10 +22,10 @@
 
         <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Login" FontSize="20" Margin="0,20,0,10" HorizontalAlignment="Center"/>
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Username:" Margin="10" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="1" Grid.Column="1" x:Name="UsernameTextBox" Margin="10" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Username}" Margin="10" VerticalAlignment="Center"/>
         <TextBlock Grid.Row="2" Grid.Column="0" Text="Password:" Margin="10" VerticalAlignment="Center"/>
-        <PasswordBox Grid.Row="2" Grid.Column="1" x:Name="PasswordBox" Margin="10" VerticalAlignment="Center"/>
-        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="Login" Margin="10" VerticalAlignment="Center"/>
-        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Content="Register" Margin="10" VerticalAlignment="Center"/>
+        <PasswordBox Grid.Row="2" Grid.Column="1" PasswordChanged="PasswordBox_PasswordChanged" Margin="10" VerticalAlignment="Center"/>
+        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="Login" Margin="10" VerticalAlignment="Center" Command="{Binding LoginCommand}"/>
+        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Content="Register" Margin="10" VerticalAlignment="Center" Command="{Binding RegisterCommand}"/>
     </Grid>
 </Window>
